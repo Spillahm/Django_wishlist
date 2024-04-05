@@ -1,7 +1,7 @@
 from django import forms
-from .models import place
+from .models import Place
 
 class NewPlaceForm(forms.ModelForm):
     class Meta:
-        model = place
+        model = Place
         fields = ('name', 'visited')
